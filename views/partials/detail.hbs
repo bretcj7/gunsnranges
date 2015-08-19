@@ -1,0 +1,21 @@
+<div class="panel panel-default" style="width: 800px;">
+  <div class="panel-body">
+    <div class="col-xs-12 col-sm-6">
+	  <ul class="list-group" style="width: 300px;">
+	    <li class="list-group-item"><strong>Name:&nbsp;</strong> {{ name }}</li>
+	    <li class="list-group-item"><strong>Address:&nbsp;</strong> {{ address }} {{ city }}, {{ state }} {{ zip }}</li>
+	    <li class="list-group-item"><strong>Website:&nbsp;</strong> <a href='http://{{ website}}'>{{ website }}</a> </li>
+	    <li class="list-group-item"><strong>Phone: </strong> {{ phone }}</li>
+	  </ul>
+	</div>
+	<div id="map" style="width: 400px; height: 300px;">
+		<iframe
+		  width="380"
+		  height="325"
+		  frameborder="0" style="border:0"
+		  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCeqOcym7lTDVhrygkEjviuU_5paKibNmw&q={{ address }}" allowfullscreen>
+		</iframe>
+	</div>
+  </div>
+</div>
+
